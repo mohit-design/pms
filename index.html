@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="author" content="" />
+	<title>Patient Lists :: Patient Management System</title>
+	<!-- Favicon Icon -->
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <!-- Font Awesome - 6.7.2 Icon CSS -->
+  <link rel="stylesheet" href="css/all.min.css" type="text/css" />
+	<!-- Bootstrap - 5.3.3 Minified CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+	<!-- Style CSS -->
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+<body>
+  <!-- Sidebar Menu Section Starts -->
+  <aside class="sidebar-menu">
+    <div class="logo text-center">
+      <a href="index.html">
+        CliniCare
+      </a>
+    </div>
+    <ul class="sidebar-menu-listing">
+      <li class="active">
+        <a href=""><i class="fa-solid fa-gauge"></i> Dashboard <i class="fa-solid fa-chevron-right"></i></a>
+        <ul class="sidebar-menu-inside-listing">
+          <li><a href="">Overview</a></li>
+          <li><a href="">Statistics</a></li>
+          <li><a href="">Notifications</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href=""><i class="fa-solid fa-user"></i> Patients <i class="fa-solid fa-chevron-right"></i></a>
+        <ul class="sidebar-menu-inside-listing">
+          <li><a href="">All Patients</a></li>
+          <li><a href="">Add New Patient</a></li>
+          <li><a href="">Patient Search</a></li>
+          <li><a href="">Patient History</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href=""><i class="fa-solid fa-calendar-check"></i> Appointments <i class="fa-solid fa-chevron-right"></i></a>
+        <ul class="sidebar-menu-inside-listing">
+          <li><a href="">Upcoming Appointments</a></li>
+          <li><a href="">Schedule Appointment</a></li>
+          <li><a href="">Appointment Calendar</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href=""><i class="fa-solid fa-clipboard"></i> Medical Records <i class="fa-solid fa-chevron-right"></i></a>
+        <ul class="sidebar-menu-inside-listing">
+          <li><a href="">View Records</a></li>
+          <li><a href="">Add New Record</a></li>
+          <li><a href="">Lab Results</a></li>
+          <li><a href="">Imaging & Reports</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href=""><i class="fa-solid fa-capsules"></i> Prescriptions <i class="fa-solid fa-chevron-right"></i></a>
+        <ul class="sidebar-menu-inside-listing">
+          <li><a href="">Current Prescriptions</a></li>
+          <li><a href="">New Prescription</a></li>
+          <li><a href="">Pharmacy Requests</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href=""><i class="fa-solid fa-user-doctor"></i> Doctors <i class="fa-solid fa-chevron-right"></i></a>
+        <ul class="sidebar-menu-inside-listing">
+          <li><a href="">Doctor Directory</a></li>
+          <li><a href="">Assign Doctor</a></li>
+          <li><a href="">Availability</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href=""><i class="fa-solid fa-folder-open"></i> Billing & Insurance <i class="fa-solid fa-chevron-right"></i></a>
+        <ul class="sidebar-menu-inside-listing">
+          <li><a href="">Billing Overview</a></li>
+          <li><a href="">Generate Invoice</a></li>
+          <li><a href="">Insurance Claims</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href=""><i class="fa-solid fa-gear"></i> Administration <i class="fa-solid fa-chevron-right"></i></a>
+        <ul class="sidebar-menu-inside-listing">
+          <li><a href="">User Management</a></li>
+          <li><a href="">Roles & Permissions</a></li>
+          <li><a href="">System Settings</a></li>
+          <li><a href="">Audit Logs</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href=""><i class="fa-solid fa-question"></i> Help & Support <i class="fa-solid fa-chevron-right"></i></a>
+        <ul class="sidebar-menu-inside-listing">
+          <li><a href="">FAQ</a></li>
+          <li><a href="">Contact Support</a></li>
+          <li><a href="">User Guide</a></li>
+        </ul>
+      </li>
+    </ul>
+  </aside>
+  <!-- Sidebar Menu Section Ends -->
+  <!-- Header Menu Section Starts -->
+  <header class="header-menu">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+          
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+          <ul class="header-login-listing">
+            <li>
+              <div class="header-doctor">
+                <div class="header-doctor-image">
+                  <img src="images/doctor.png" class="img-fluid" alt="">
+                </div>
+                <div class="header-doctor-info">
+                  <h5>John Due</h5>
+                  <h6>Doctor</h6>
+                </div>
+              </div>
+            </li>
+            <li class="logout-li">
+              <a href=""><i class="fa-solid fa-right-from-bracket"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header Menu Section Ends -->
+  <main class="wrapper">
+    <!-- Card Details Section Starts -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-3 col-lg-4 col-xl-4 col-xxl-4">
+          <div class="box-card-dashboard">
+            <div class="row align-items-center">
+              <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-6">
+                <div class="box-card-dashboard-img">
+                  <img src="images/patient.svg" class="img-fluid" alt="">
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-8 col-xxl-6">
+                <div class="box-card-dashboard-info">
+                  <h4>Number of Patients</h4>
+                  <h2>34</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

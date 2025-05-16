@@ -1,0 +1,192 @@
+/*------- Font Family Starts -------*/
+
+@font-face { font-family: "OpenSans-Light"; src: url("../fonts/OpenSans-Light.ttf"); }
+@font-face { font-family: "OpenSans-Regular"; src: url("../fonts/OpenSans-Regular.ttf"); }
+@font-face { font-family: "OpenSans-SemiBold"; src: url("../fonts/OpenSans-SemiBold.ttf"); }
+@font-face { font-family: "OpenSans-Bold"; src: url("../fonts/OpenSans-Bold.ttf"); }
+
+/*------- Font Family Ends -------*/
+
+/*------- Reset CSS Starts -------*/
+
+html { font-size: 10px; }
+ul,
+h2,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+li { list-style-type: none; }
+a {
+  text-decoration: none;
+}
+
+/*------- Reset CSS Ends -------*/
+
+/*------- Custom Scrollbar Section Starts -------*/
+
+::-webkit-scrollbar { width: 7px; }
+::-webkit-scrollbar-track { background-color: #00102a; -webkit-border-radius: 14px; -moz-border-radius: 14px; -ms-border-radius: 14px; -o-border-radius: 14px; border-radius: 14px; }
+::-webkit-scrollbar-thumb { background-color: #cccccc; -webkit-border-radius: 14px; -moz-border-radius: 14px; -ms-border-radius: 14px; -o-border-radius: 14px; border-radius: 14px; }
+::-webkit-scrollbar-thumb:hover { background-color: #ffffff; }
+
+/*------- Custom Scrollbar Section Ends -------*/
+
+/*------- Common CSS Starts -------*/
+
+body { background-color: #000a1a; }
+.container-fluid { padding: 15px; }
+.row { margin-left: -15px; margin-right: -15px; }
+.row > [class^=col] { padding-left: 15px; padding-right: 15px; }
+
+/*------- Common CSS Ends -------*/
+
+/*------- Sidebar Menu Section CSS Starts -------*/
+
+.sidebar-menu {
+  background-color: #00102a;
+  height: calc(100% - 70px);
+  left: 0;
+  overflow-y: auto;
+  position: fixed;
+  top: 70px;
+  width: 270px;
+  z-index: 1;
+}
+.logo {
+  background-color: #00102a;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 270px;
+  z-index: 1;
+}
+.logo > a { color: #ffffff; display: block; font: 2.4rem/1 "OpenSans-Bold"; padding: 23px 15px; }
+.sidebar-menu-listing { padding: 0 15px 15px; }
+.sidebar-menu-listing > li > a {
+  color: #eeeeee;
+  display: block;
+  font: 1.6rem/normal "OpenSans-Regular";
+  padding: 10px 0;
+  position: relative;
+  z-index: 1;
+}
+.sidebar-menu-listing > li > a > i:first-child {
+  padding-right: 5px;
+}
+.sidebar-menu-listing > li > a > i:last-child {
+  font-size: 1.4rem;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.sidebar-menu-listing > li.active > a {
+  color: #cccccc;
+}
+.sidebar-menu-listing > li > a:hover {
+  color: #ffffff;
+}
+.sidebar-menu-inside-listing {
+  padding-left: 30px;
+}
+.sidebar-menu-inside-listing > li > a {
+  color: #cccccc;
+  display: block;
+  font: 1.4rem/normal "OpenSans-Light";
+  padding: 5px 5px 5px 15px;
+  position: relative;
+  z-index: 1;
+}
+.sidebar-menu-inside-listing > li > a::before {
+  content: "-";
+  display: block;
+  font-size: 3rem;
+  left: 0;
+  position: absolute;
+  top: 45%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.sidebar-menu-inside-listing > li > a:hover {
+  color: #ffffff;
+}
+
+/*------- Sidebar Menu Section CSS Ends -------*/
+
+/*------- Header Menu Section CSS Starts -------*/
+
+.header-menu {
+  background-color: #00102a;
+  left: 270px;
+  position: fixed;
+  top: 0;
+  width: calc(100% - 270px);
+}
+.header-menu > .container-fluid { padding: 0 15px; }
+.header-login-listing { align-items: center; display: flex; justify-content: flex-end; }
+.header-login-listing > li { margin-right: 15px; }
+.header-login-listing > li:last-child { margin-right: 0; }
+.header-login-listing > li.logout-li > a { background-color: #ffffff; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px;  border-radius: 4px; display: block; padding: 10px; }
+.header-login-listing > li.logout-li > a > i { color: #f00; font-size: 1.6rem; }
+.header-doctor { background-color: #000a1a; align-items: center; display: inline-flex; justify-content: flex-end; padding: 15px; }
+.header-doctor-image > img { border: 2px solid #ffffff; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; height: 40px; width: 40px; }
+.header-doctor-info { padding-left: 10px; }
+.header-doctor-info > h5 { color: #ffffff; font: 1.4rem/1 "OpenSans-SemiBold"; margin-bottom: 10px; }
+.header-doctor-info > h6 { color: #cccccc; font: 1.2rem/1 "OpenSans-Regular"; }
+
+/*------- Header Menu Section CSS Ends -------*/
+
+/*------- Wrapper Section Starts -------*/
+
+.wrapper {
+  margin: 85px 0 0 270px;
+  padding: 0 15px;
+  width: calc(100% - 270px);
+}
+
+/*------- Wrapper Section Ends -------*/
+
+/*------- Card Details Section Starts -------*/
+
+.box-card-dashboard { background-color: rgb(255 255 255 / 5%); -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; padding: 15px; }
+.box-card-dashboard-img > img { border: 2px solid #FFFFFF; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; padding: 15px; }
+.box-card-dashboard-info > h4 { color: #FFFFFF; font: 1.8rem/normal "OpenSans-SemiBold"; }
+.box-card-dashboard-info > h2 { color: #FFFFFF; font: 3rem/normal "OpenSans-Bold"; }
+
+/*------- Card Details Section Ends -------*/
+
+/*------- Patient Lists Page Starts -------*/
+
+.table {
+  border: 1px solid #dddddd;
+}
+.table > thead > tr > th {
+  background-color: #dddddd;
+  color: #000000;
+  font: 1.4rem/normal "OpenSans-SemiBold";
+}
+.table > tbody > tr > td {
+  box-shadow: none;
+  color: #000000;
+  font: 1.4rem/normal "OpenSans-Regular";
+}
+.table > tbody > tr:nth-child(odd) > td {
+  background-color: #ffffff;
+}
+.table > tbody > tr:nth-child(even) > td {
+  background-color: #eeeeee;
+}
+
+/*------- Patient Lists Page Ends -------*/
